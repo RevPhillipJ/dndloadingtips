@@ -98,18 +98,18 @@
         }
 
         // Function to load tips from tips.json
-        function loadTips() {
-            fetch('tips.json')
+       fetch('tips.json')
     .then(response => response.json())
     .then(tips => {
         const randomTip = tips[Math.floor(Math.random() * tips.length)];
         document.querySelector('.headline').textContent = randomTip.headline;
         document.querySelector('.description').textContent = randomTip.description;
-    });
+    })
+    .catch(error => console.error("Error loading tips:", error));
 
         function getRandomImage() {
-            return `${images[Math.floor(Math.random() * images.length)]}`;
-        }
+    return images[Math.floor(Math.random() * images.length)];
+}
         
         function getRandomTip() {
             if (tips.length === 0) {
