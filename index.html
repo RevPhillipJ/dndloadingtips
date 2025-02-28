@@ -99,7 +99,7 @@
 
         // Function to load tips from tips.txt
         function loadTips() {
-            fetch('tips.json')
+            fetch('tips2.json')
     .then(response => response.json())
     .then(tips => {
         const randomTip = tips[Math.floor(Math.random() * tips.length)];
