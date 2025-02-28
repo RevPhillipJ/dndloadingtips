@@ -7,7 +7,7 @@
     <style>
         @font-face {
             font-family: 'FTY SKORZHEN NCV';
-            src: url'https://github.com/RevPhillipJ/dndloadingtips/blob/main/FTY%20SKORZHEN%20NCV.otf' format('truetype');
+            src: url('https://github.com/RevPhillipJ/dndloadingtips/blob/main/FTY%20SKORZHEN%20NCV.otf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -89,32 +89,18 @@
         const imageContainer = document.getElementById("image-container");
         let currentImage = document.getElementById("currentImage");
         const tipContainer = document.getElementById("tip-container");
-        let tips = []; // Will be populated from tips.txt
 
         // Generate image filenames dynamically
         const images = [];
         for (let i = 1; i <= 8; i++) {
-            images.push(`image (${i}).png`);
+            images.push(`https://github.com/RevPhillipJ/dndloadingtips/blob/main/image%20(${i}).png`);
         }
 
-        // Function to load tips from tips.json
-       fetch('tips.json')
-    .then(response => response.json())
-    .then(tips => {
-        const randomTip = tips[Math.floor(Math.random() * tips.length)];
-        document.querySelector('.headline').textContent = randomTip.headline;
-        document.querySelector('.description').textContent = randomTip.description;
-    })
-    .catch(error => console.error("Error loading tips:", error));
-
         function getRandomImage() {
-    return images[Math.floor(Math.random() * images.length)];
-}
-        
-        function getRandomTip() {
-            if (tips.length === 0) {
-                return { headline: "Loading tip...", description: "Please wait..." };
-            }
+            return images[Math.floor(Math.random() * images.length)];
+        }
+
+        function getRandomTip(tips) {
             return tips[Math.floor(Math.random() * tips.length)];
         }
 
@@ -129,9 +115,17 @@
             setTimeout(() => {
                 newImage.style.opacity = "1";
                 currentImage.style.opacity = "0";
-                const randomTip = getRandomTip();
-                tipContainer.querySelector('.headline').textContent = randomTip.headline;
-                tipContainer.querySelector('.description').textContent = randomTip.description;
+                
+                // Load a new tip
+                fetch('https://github.com/RevPhillipJ/dndloadingtips/blob/main/tips.json')
+                    .then(response => response.json())
+                    .then(tips => {
+                        const randomTip = getRandomTip(tips);
+                        tipContainer.querySelector('.headline').textContent = randomTip.headline;
+                        tipContainer.querySelector('.description').textContent = randomTip.description;
+                    })
+                    .catch(error => console.error("Error loading tips:", error));
+
                 tipContainer.style.opacity = "1";
                 
                 setTimeout(() => {
@@ -142,19 +136,19 @@
             }, 100);
         }
 
-        // Load tips from file
-        loadTips();
-
         // Initialize with a random image and tip
         currentImage.src = getRandomImage();
         currentImage.style.opacity = "1";
 
-        setTimeout(() => {
-            const initialTip = getRandomTip();
-            tipContainer.querySelector('.headline').textContent = initialTip.headline;
-            tipContainer.querySelector('.description').textContent = initialTip.description;
-        }, 500); // Delay to ensure tips are loaded
-        
+        fetch('https://github.com/RevPhillipJ/dndloadingtips/blob/main/tips.json')
+            .then(response => response.json())
+            .then(tips => {
+                const initialTip = getRandomTip(tips);
+                tipContainer.querySelector('.headline').textContent = initialTip.headline;
+                tipContainer.querySelector('.description').textContent = initialTip.description;
+            })
+            .catch(error => console.error("Error loading tips:", error));
+
         // Change image and tip every 30 seconds
         setInterval(changeImage, 30000);
     </script>
