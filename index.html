@@ -97,9 +97,9 @@
             images.push(`image (${i}).png`);
         }
 
-        // Function to load tips from tips.txt
+        // Function to load tips from tips.json
         function loadTips() {
-            fetch('tips2.json')
+            fetch('tips.json')
     .then(response => response.json())
     .then(tips => {
         const randomTip = tips[Math.floor(Math.random() * tips.length)];
@@ -108,7 +108,7 @@
     });
 
         function getRandomImage() {
-            return `DND_scroller/${images[Math.floor(Math.random() * images.length)]}`;
+            return `${images[Math.floor(Math.random() * images.length)]}`;
         }
         
         function getRandomTip() {
