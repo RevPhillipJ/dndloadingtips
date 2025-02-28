@@ -7,7 +7,7 @@
     <style>
         @font-face {
             font-family: 'FTY SKORZHEN NCV';
-            src: url('https://github.com/RevPhillipJ/dndloadingtips/blob/main/FTY%20SKORZHEN%20NCV.otf') format('truetype');
+            src: url('https://revphillipj.github.io/dndloadingtips/FTY%20SKORZHEN%20NCV.otf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -93,7 +93,7 @@
         // Generate image filenames dynamically
         const images = [];
         for (let i = 1; i <= 8; i++) {
-            images.push(`https://github.com/RevPhillipJ/dndloadingtips/blob/main/image%20(${i}).png`);
+            images.push(`https://revphillipj.github.io/dndloadingtips/image%20(${i}).png`);
         }
 
         function getRandomImage() {
@@ -117,7 +117,7 @@
                 currentImage.style.opacity = "0";
                 
                 // Load a new tip
-                fetch('https://github.com/RevPhillipJ/dndloadingtips/blob/main/tips.json')
+                fetch('https://revphillipj.github.io/dndloadingtips/tips.json')
                     .then(response => response.json())
                     .then(tips => {
                         const randomTip = getRandomTip(tips);
@@ -140,7 +140,7 @@
         currentImage.src = getRandomImage();
         currentImage.style.opacity = "1";
 
-        fetch('https://github.com/RevPhillipJ/dndloadingtips/blob/main/tips.json')
+        fetch('https://revphillipj.github.io/dndloadingtips/tips.json')
             .then(response => response.json())
             .then(tips => {
                 const initialTip = getRandomTip(tips);
