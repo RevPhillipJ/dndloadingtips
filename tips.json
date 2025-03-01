@@ -10,7 +10,7 @@
    { "headline": "Reaction Man", "description": "Reactions are regained on your turn, not at the top of the round. Don't forget to react!" },
    { "headline": "DM's Smile", "description": "The DM's smile is always a warning." },
    { "headline": "Perfectly Balanced", "description": "If a situation grants you both advantage and disadvantage, they cancel each other out—even if there are multiple instances of either." },
-   { "headline": "Dueling Dice", "description": "In a contest, two participants roll against each other; comparing totals against each other, not a DC." },
+   { "headline": "Dueling Dice", "description": "In a contest, two participants roll in competition; comparing totals against each other, not a DC." },
    { "headline": "All For One!", "description": "In a group check, everybody rolls. If at least half the group succeeds, everyone does! If not..." },
    { "headline": "Get Out Of There!", "description": "Disengage if you need to make a tactical retreat. Teleporting doesn't incur attacks of opportunity, and creatures that have already used their reaction can't make another!" },
    { "headline": "Can I Help You?", "description": "When using the Help action, you can give advantage to another player making an ability check, or distract a creature within 5ft to give the next attack on that creature advantage." },
@@ -18,5 +18,13 @@
    { "headline": "I Can't Hold It Much Longer!", "description": "If you ready a spell, you cast it as normal but hold the energy. Holding a readied spell requires concentration." },
    { "headline": "Which One Is The Red Wire?", "description": "Darkvision only lets creatures see in shades of gray. You'll need a light source to solve that color-coded puzzle!" },
    { "headline": "The Fall Guy", "description": "If you fall, you take 1d6 bludgeoning damage for every 10ft you fall, to a maximum of 20d6. Unless you can reduce the damage to zero, you also land prone." },
-   { "headline": "Oh, I'm Sorry...", "description": "If you're concentrating on a spell and take damage, you need to make a constitution saving throw. The DC is either 10 or half the damage taken, whichever is higher." }
+   { "headline": "Oh, I'm Sorry...", "description": "If you're concentrating on a spell and take damage, you need to make a constitution saving throw. The DC is either 10 or half the damage taken, whichever is higher." },
+   { "headline": "Go for the Eyes!", "description": "Attack rolls against a blinded creature have advantage, whilst the blinded creature has disadvantage on attack rolls." },
+   { "headline": "Sweet Talker", "description": "If you've charmed a creature, that creature can't attack you or include you in dangerous area-of-effect spells." },
+   { "headline": "Cream Crackered", "description": "Exhaustion has six levels of effects, and each effect stacks with the others. Finishing a long rest removes one level of exhaustion. Level six is death, so try and avoid that!" },
+   { "headline": "AAAAAAAAAAAAAAAA!", "description": "When frightened, you can't move close to the source of your fear, and you have disadvantage on attack rolls and ability checks when you can see the source of your fear." },
+   { "headline": "Don't go Anywhere...", "description": "Incapacitated creatures can't take actions or reactions. If you're paralyzed, petrified, stunned or unconcious- congratulations, you're also incapacitated!" },
+   { "headline": "No Blood From a Stone", "description": "The good things about being petrified, is that you're resistant to all damage, immune to poison and disease, and no longer age! All positive really." },
+   { "headline": "As a Skunk", "description": "When poisoned, creatures have disadvantage on attack rolls and ability checks. Being drunk is a kind of poisoned, so go easy on that Dwarven whiskey." },
+   { "headline": "Get Down!", "description": "Dropping prone gives attackers within 5ft advantage on attacks. Any further away and creatures have disadvantage, so have a lie down until this ambush blows over." }
 ]
