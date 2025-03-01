@@ -140,17 +140,32 @@
         currentImage.src = getRandomImage();
         currentImage.style.opacity = "1";
 
-        fetch('https://revphillipj.github.io/dndloadingtips/tips.json')
-            .then(response => response.json())
-            .then(tips => {
-                const initialTip = getRandomTip(tips);
-                tipContainer.querySelector('.headline').textContent = initialTip.headline;
-                tipContainer.querySelector('.description').textContent = initialTip.description;
-            })
-            .catch(error => console.error("Error loading tips:", error));
+let tips = []; // Global array to store tips
 
-        // Change image and tip every 30 seconds
-        setInterval(changeImage, 30000);
+fetch('https://revphillipj.github.io/dndloadingtips/tips.json')
+    .then(response => response.json())
+    .then(data => {
+        tips = data; // Store all loaded tips in the global array
+        changeTip(); // Show a random tip initially
+    })
+    .catch(error => console.error("Error loading tips:", error));
+
+function getRandomTip() {
+    if (tips.length === 0) {
+        return { headline: "Loading tip...", description: "Please wait..." };
+    }
+    return tips[Math.floor(Math.random() * tips.length)];
+}
+
+function changeTip() {
+    const randomTip = getRandomTip();
+    document.querySelector('.headline').textContent = randomTip.headline;
+    document.querySelector('.description').textContent = randomTip.description;
+}
+
+// Change tips every 30 seconds
+setInterval(changeTip, 30000);
+
     </script>
 </body>
 </html>
