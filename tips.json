@@ -7,4 +7,8 @@
         "headline": "Exploit vulnerability!",
         "description": "Creatures that have a damage vulnerability take double damage- try different types of attacks to discover them!"
     }
+    {
+        "headline": "Domesticated Mounts",
+        "description": "Mounts can take the dash, disengage, or dodge action. Intelligent mounts can do what they want, including eat their riders!"
+    },
 ]
