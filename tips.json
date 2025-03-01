@@ -1,20 +1,20 @@
 [
    { "headline": "Try Hiding Behind Things!", "description": "Cover can add to your AC by as much as +5!" },
-   { "headline": "Exploit vulnerability!", "description": "Creatures that have a damage vulnerability take double damage- try different types of attacks to discover them!" }
-   { "headline": "Domesticated Mounts", "description": "Mounts can take the dash, disengage, or dodge action. Intelligent mounts can do what they want, including eat their riders!" }
-   { "headline": "Underwater combat", "description": "Unless you have a swimming speed, underwater melee attacks have disadvantage—unless you're using a dagger, javelin, shortsword, spear, or trident." }
-   { "headline": "Fire Proof", "description": "If you're fully submerged in water, you gain resistance to fire damage." }
-   { "headline": "Shove This!", "description": "Try pushing people! You can knock someone prone or push them 5ft by making a shove attack. If you can make multiple attacks, you can replace any of them with a shove." }
-   { "headline": "It's a Knockout!", "description": "When you make a strike that would kill a creature, you can instead choose to knock it out, rendering it unconscious." }
-   { "headline": "Backup Character", "description": "Keep a backup character ready, just in case." }
-   { "headline": "Reaction Man", "description": "Reactions are regained on your turn, not at the top of the round. Don't forget to react!" }
-   { "headline": "DM's Smile", "description": "The DM's smile is always a warning." }
-   { "headline": "Perfectly Balanced", "description": "If a situation grants you both advantage and disadvantage, they cancel each other out- even if there are multiple instances of either." }
-   { "headline": "Duelling Dice", "description": "In a contest, two participants roll against each other; comparing totals against each other, not a DC." }
-   { "headline": "All For One!", "description": "In a group check, everybody rolls. If at least half the group succeeds, everyone does! If not..." }
-   { "headline": "Get Out Of There!", "description": "Disengage if you need to make a tactical retreat. Teleporting doesn't incur attacks of opportunity, and creatures that have already used their reaction can't make another!" }
-   { "headline": "Can I Help You?", "description": "When using the help action, you can give advantage to another player making an ability check, or to distract a creature within 5ft to give the next attack on that creature advantage." }
-   { "headline": "Where'd They Go?", "description": "To hide, you must be behind at least 3/4 cover, and out of sight of any enemies." }
-   { "headline": "I Can't Hold It Much Longer!", "description": "If you ready a spell, you cast it as normal, but hold the energy. Holding a readied spell requires concentration." }
-   { "headline": "Which One Is The Red Wire?", "description": "Darkvision only lets creatures see in shades of grey. You'll need a light source to solve that colour-coded puzzle!" }
+   { "headline": "Exploit vulnerability!", "description": "Creatures that have a damage vulnerability take double damage- try different types of attacks to discover them!" },
+   { "headline": "Domesticated Mounts", "description": "Mounts can take the dash, disengage, or dodge action. Intelligent mounts can do what they want, including eat their riders!" },
+   { "headline": "Underwater combat", "description": "Unless you have a swimming speed, underwater melee attacks have disadvantage—unless you're using a dagger, javelin, shortsword, spear, or trident." },
+   { "headline": "Fire Proof", "description": "If you're fully submerged in water, you gain resistance to fire damage." },
+   { "headline": "Shove This!", "description": "Try pushing people! You can knock someone prone or push them 5ft by making a shove attack. If you can make multiple attacks, you can replace any of them with a shove." },
+   { "headline": "It's a Knockout!", "description": "When you make a strike that would kill a creature, you can instead choose to knock it out, rendering it unconscious." },
+   { "headline": "Backup Character", "description": "Keep a backup character ready, just in case." },
+   { "headline": "Reaction Man", "description": "Reactions are regained on your turn, not at the top of the round. Don't forget to react!" },
+   { "headline": "DM's Smile", "description": "The DM's smile is always a warning." },
+   { "headline": "Perfectly Balanced", "description": "If a situation grants you both advantage and disadvantage, they cancel each other out- even if there are multiple instances of either." },
+   { "headline": "Duelling Dice", "description": "In a contest, two participants roll against each other; comparing totals against each other, not a DC." },
+   { "headline": "All For One!", "description": "In a group check, everybody rolls. If at least half the group succeeds, everyone does! If not..." },
+   { "headline": "Get Out Of There!", "description": "Disengage if you need to make a tactical retreat. Teleporting doesn't incur attacks of opportunity, and creatures that have already used their reaction can't make another!" },
+   { "headline": "Can I Help You?", "description": "When using the help action, you can give advantage to another player making an ability check, or to distract a creature within 5ft to give the next attack on that creature advantage." },
+   { "headline": "Where'd They Go?", "description": "To hide, you must be behind at least 3/4 cover, and out of sight of any enemies." },
+   { "headline": "I Can't Hold It Much Longer!", "description": "If you ready a spell, you cast it as normal, but hold the energy. Holding a readied spell requires concentration." },
+   { "headline": "Which One Is The Red Wire?", "description": "Darkvision only lets creatures see in shades of grey. You'll need a light source to solve that colour-coded puzzle!" },
 ]
