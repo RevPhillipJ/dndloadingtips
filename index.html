@@ -117,7 +117,7 @@
                 currentImage.style.opacity = "0";
                 
                 // Load a new tip
-                fetch('https://revphillipj.github.io/dndloadingtips/tips.json')
+                fetch('tips.json')
                     .then(response => response.json())
                     .then(tips => {
                         const randomTip = getRandomTip(tips);
@@ -140,7 +140,7 @@
         currentImage.src = getRandomImage();
         currentImage.style.opacity = "1";
 
-        fetch('https://revphillipj.github.io/dndloadingtips/tips.json')
+        fetch('tips.json')
             .then(response => response.json())
             .then(tips => {
                 const initialTip = getRandomTip(tips);
