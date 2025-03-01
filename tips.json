@@ -16,5 +16,7 @@
    { "headline": "Can I Help You?", "description": "When using the Help action, you can give advantage to another player making an ability check, or distract a creature within 5ft to give the next attack on that creature advantage." },
    { "headline": "Where'd They Go?", "description": "To hide, you must be behind at least 3/4 cover and out of sight of any enemies." },
    { "headline": "I Can't Hold It Much Longer!", "description": "If you ready a spell, you cast it as normal but hold the energy. Holding a readied spell requires concentration." },
-   { "headline": "Which One Is The Red Wire?", "description": "Darkvision only lets creatures see in shades of gray. You'll need a light source to solve that color-coded puzzle!" }
+   { "headline": "Which One Is The Red Wire?", "description": "Darkvision only lets creatures see in shades of gray. You'll need a light source to solve that color-coded puzzle!" },
+   { "headline": "The Fall Guy", "description": "If you fall, you take 1d6 bludgeoning damage for every 10ft you fall, to a maximum of 20d6. Unless you can reduce the damage to zero, you also land prone." },
+   { "headline": "Oh, I'm Sorry...", "description": "If you're concentrating on a spell and take damage, you need to make a constitution saving throw. The DC is either 10 or half the damage taken, whichever is higher." }
 ]
