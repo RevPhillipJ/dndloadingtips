@@ -26,5 +26,8 @@
    { "headline": "Don't go Anywhere...", "description": "Incapacitated creatures can't take actions or reactions. If you're paralyzed, petrified, stunned or unconcious- congratulations, you're also incapacitated!" },
    { "headline": "No Blood From a Stone", "description": "The good things about being petrified, is that you're resistant to all damage, immune to poison and disease, and no longer age! All positive really." },
    { "headline": "As a Skunk", "description": "When poisoned, creatures have disadvantage on attack rolls and ability checks. Being drunk is a kind of poisoned, so go easy on that Dwarven whiskey." },
-   { "headline": "Get Down!", "description": "Dropping prone gives attackers within 5ft advantage on attacks. Any further away and creatures have disadvantage, so have a lie down until this ambush blows over." }
+   { "headline": "Get Down!", "description": "Dropping prone gives attackers within 5ft advantage on attacks. Any further away and creatures have disadvantage, so have a lie down until the archers get bored." },
+   { "headline": "Silver Bullet", "description": "Spotted a cult of Malar? Condiser getting your weapons silvered. Typically, the cost of one weapon or 10 pieces of ammunition to be silvered is 100gp, but it'll be worth it on a full moon." },
+   { "headline": "And be Merry", "description": "The 'Equipment' secrion of the Player's Handbook has typical prices for food, drink and lodging. It also costs out cheese by the hunk and meat by the chunk." },
+   { "headline": "Holy Water!", "description": "You can splash holy water or throw the entire flask onto suspected fiends or undead, dealing 2d6 radiant damage! Otherwise the target just gets wet." } 
 ]
