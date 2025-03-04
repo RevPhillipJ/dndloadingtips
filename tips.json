@@ -8,7 +8,7 @@
    { "headline": "It's a Knockout!", "description": "When you make a strike that would kill a creature, you can instead choose to knock it out, rendering it unconscious." },
    { "headline": "Backup Character", "description": "Keep a backup character ready, just in case." },
    { "headline": "Reaction Man", "description": "Reactions are regained on your turn, not at the top of the round. Don't forget to react!" },
-   { "headline": "DM's Smile", "description": "The DM's smile is always a warning." },
+   { "headline": "That damn smile", "description": "The DM's smile is always a warning." },
    { "headline": "Perfectly Balanced", "description": "If a situation grants you both advantage and disadvantage, they cancel each other out—even if there are multiple instances of either." },
    { "headline": "Dueling Dice", "description": "In a contest, two participants roll in competition; comparing totals against each other, not a DC." },
    { "headline": "All For One!", "description": "In a group check, everybody rolls. If at least half the group succeeds, everyone does! If not..." },
