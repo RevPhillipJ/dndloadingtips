@@ -32,6 +32,6 @@
    { "headline": "Holy Water!", "description": "You can splash holy water or throw the entire flask onto suspected fiends or undead, dealing 2d6 radiant damage! Otherwise the target just gets wet." },
    { "headline": "Who Goes There?", "description": "Heavily obscured areas, such as fog, obscure creatures sight to the point that they have the 'blinded' condition. Darkvision won't help!" },
    { "headline": "Are you still there?", "description": "Attacks of opportunity can only be taken against creatures you can see. If the creature is invisible, or the attacker is blinded, they can't react. That's what blind fighting is for!" },
-   { "headline": "Drink Up!", "description": "Potions can be administered to unconcious creatures. You'd think this would just be Potions of Healing, but no- you can give your downed comrade the Potion of Gaseous form if you like!" }
+   { "headline": "Drink Up!", "description": "Potions can be administered to unconcious creatures. You'd think this would just be Potions of Healing, but no- you can give your downed comrade the Potion of Gaseous form if you like!" },
    { "headline": "Horse Armor", "description": "Your mount can wear any type of armor a player character can. Barding costs four times as much as humanoid armor and is twice as heavy." }
 ]
