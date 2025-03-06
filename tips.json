@@ -6,7 +6,7 @@
    { "headline": "Fire Proof", "description": "If you're fully submerged in water, you gain resistance to fire damage." },
    { "headline": "Shove This!", "description": "Try pushing people! You can knock someone prone or push them 5ft by making a shove attack. If you can make multiple attacks, you can replace any of them with a shove." },
    { "headline": "It's a Knockout!", "description": "When you make a strike that would kill a creature, you can instead choose to knock it out, rendering it unconscious." },
-   { "headline": "Backup Character", "description": "Keep a backup character ready, just in case." },
+   { "headline": "Identical Twin", "description": "Keep a backup character ready, just in case." },
    { "headline": "Reaction Man", "description": "Reactions are regained on your turn, not at the top of the round. Don't forget to react!" },
    { "headline": "That damn smile", "description": "The DM's smile is always a warning." },
    { "headline": "Perfectly Balanced", "description": "If a situation grants you both advantage and disadvantage, they cancel each other out—even if there are multiple instances of either." },
@@ -30,5 +30,8 @@
    { "headline": "Silver Bullet", "description": "Spotted a cult of Malar? Condiser getting your weapons silvered. Typically, the cost of one weapon or 10 pieces of ammunition to be silvered is 100gp, but it'll be worth it on a full moon." },
    { "headline": "And be Merry", "description": "The 'Equipment' secrion of the Player's Handbook has typical prices for food, drink and lodging. It also costs out cheese by the hunk and meat by the chunk." },
    { "headline": "Holy Water!", "description": "You can splash holy water or throw the entire flask onto suspected fiends or undead, dealing 2d6 radiant damage! Otherwise the target just gets wet." },
-   { "headline": "Who Goes There?", "description": "Heavily obscured areas, such as fog, obscure creatures sight to the point that they have the 'blinded' condition. Darkvision won't help!" }
+   { "headline": "Who Goes There?", "description": "Heavily obscured areas, such as fog, obscure creatures sight to the point that they have the 'blinded' condition. Darkvision won't help!" },
+   { "headline": "Are you still there?", "description": "Attacks of opportunity can only be taken against creatures you can see. If the creature is invisible, or the attacker is blinded, they can't react. That's what blind fighting is for!" },
+   { "headline": "Drink Up!", "description": "Potions can be administered to unconcious creatures. You'd think this would just be Potions of Healing, but no- you can give your downed comrade the Potion of Gaseous form if you like!" }
+   { "headline": "Horse Armor", "description": "Your mount can wear any type of armor a player character can. Barding costs four times as much as humanoid armor and is twice as heavy." }
 ]
