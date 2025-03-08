@@ -33,5 +33,8 @@
    { "headline": "Who Goes There?", "description": "Heavily obscured areas, such as fog, obscure creatures sight to the point that they have the 'blinded' condition. Darkvision won't help!" },
    { "headline": "Are you still there?", "description": "Attacks of opportunity can only be taken against creatures you can see. If the creature is invisible, or the attacker is blinded, they can't react. That's what blind fighting is for!" },
    { "headline": "Drink Up!", "description": "Potions can be administered to unconcious creatures. You'd think this would just be Potions of Healing, but no- you can give your downed comrade the Potion of Gaseous form if you like!" },
-   { "headline": "Horse Armor", "description": "Your mount can wear any type of armor a player character can. Barding costs four times as much as humanoid armor and is twice as heavy." }
+   { "headline": "Horse Armor", "description": "Your mount can wear any type of armor a player character can. Barding costs four times as much as humanoid armor and is twice as heavy." },
+   { "headlime": "Black Aarakocra Down", "description": "If a flying creature is knocked prone, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover." },
+   { "headline": "The Temp", "description": "If you take damage whilst you have temporary hit points, those are lost first. You can't restore temporary hit points by healing." },
+   { "headline": "Temporary Relief", "description": "If you're unconcious, temporary hit points can't restore you to conciousness. However, they can still absorb damage you might take from attacks." }
 ]
