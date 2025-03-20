@@ -67,6 +67,6 @@
    { "headline": "Can't touch Gith", "description": "Both Githyanki and Githzerai have resistance to psychic damage and know the mage hand spell." },
    { "headline": "Death roll", "description": "Lizardfolk can make a special bite attack with their bonus action. If it hits, they gain the damage dealt back as temporary hit points- tasty!" },
    { "headline": "Cat Dash", "description": "Tabaxi can choose to move double their movement on their turn- although they can't do this again until they spend a turn not moving." },
-   { "headline": "Flexible Fashion", "description": "Magic items usually realise themselves to for the user. One size to fit them all!" },
+   { "headline": "Flexible Fashion", "description": "Magic items usually resize themselves to for the user. One size to fit them all!" },
    { "headline": "Focus up", "description": "Magic items that are staffs, wands and rods can usually be used as an arcane focus. Efficient!" }
 ]
