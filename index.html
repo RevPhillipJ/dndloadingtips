@@ -74,70 +74,6 @@
             50% { transform: scale(1.2) translate(-3%, -3%); }
             100% { transform: scale(1.1) translate(0, 0); }
         }
-
-        /* Menu Button Alignment Fix */
-        .menu-container {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(255, 255, 255, 0.7);
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-            z-index: 1000;
-        }
-        
-        .menu-container:hover {
-            width: 180px;
-            height: auto;
-            border-radius: 10px;
-            padding: 15px;
-            background-color: rgba(0, 0, 0, 0.8);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .menu-container a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            margin: 5px 0;
-            padding: 5px 10px;
-            border-radius: 5px;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .menu-container:hover a {
-            opacity: 1;
-        }
-        
-        .menu-header {
-            color: #ffcc00;
-            font-size: 12px;
-            font-weight: bold;
-            margin-top: 10px;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        
-        .menu-container:hover .menu-header {
-            opacity: 1;
-        }
-        
-        .menu-container a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
     </style>
 </head>
 <body>
@@ -149,21 +85,12 @@
         <p class="description">Please wait...</p>
     </div>
 
-    <div class="menu-container">
-        ☰
-        <span class="menu-header">Contact</span>
-        <a href="contact.html">Email Us</a>
-        <a href="socials.html">Social Media</a>
-        <span class="menu-header">Support</span>
-        <a href="faq.html">FAQ</a>
-        <a href="support.html">Get Help</a>
-    </div>
-
     <script>
         const imageContainer = document.getElementById("image-container");
         let currentImage = document.getElementById("currentImage");
         const tipContainer = document.getElementById("tip-container");
 
+        // Generate image filenames dynamically
         const images = [];
         for (let i = 1; i <= 416; i++) {
             images.push(`https://revphillipj.github.io/dndloadingtips/image%20(${i}).png`);
@@ -183,18 +110,24 @@
             newImage.classList.add("image");
             newImage.style.opacity = "0";
             imageContainer.appendChild(newImage);
+            
             tipContainer.style.opacity = "0";
             setTimeout(() => {
                 newImage.style.opacity = "1";
                 currentImage.style.opacity = "0";
+                
+                // Load a new tip
                 fetch('tips.json')
                     .then(response => response.json())
                     .then(tips => {
                         const randomTip = getRandomTip(tips);
                         tipContainer.querySelector('.headline').textContent = randomTip.headline;
                         tipContainer.querySelector('.description').textContent = randomTip.description;
-                    });
+                    })
+                    .catch(error => console.error("Error loading tips:", error));
+
                 tipContainer.style.opacity = "1";
+                
                 setTimeout(() => {
                     imageContainer.removeChild(currentImage);
                     newImage.id = "currentImage";
@@ -203,8 +136,20 @@
             }, 100);
         }
 
+        // Initialize with a random image and tip
         currentImage.src = getRandomImage();
         currentImage.style.opacity = "1";
+
+        fetch('tips.json')
+            .then(response => response.json())
+            .then(tips => {
+                const initialTip = getRandomTip(tips);
+                tipContainer.querySelector('.headline').textContent = initialTip.headline;
+                tipContainer.querySelector('.description').textContent = initialTip.description;
+            })
+            .catch(error => console.error("Error loading tips:", error));
+
+        // Change image and tip every 30 seconds
         setInterval(changeImage, 30000);
     </script>
 </body>
