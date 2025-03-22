@@ -74,83 +74,29 @@
             50% { transform: scale(1.2) translate(-3%, -3%); }
             100% { transform: scale(1.1) translate(0, 0); }
         }
-    </style>
-</head>
-<body>
-    <div id="image-container">
-        <img id="currentImage" class="image" src="" alt="Random Image">
-    </div>
-    <div id="tip-container">
-        <p class="headline">Loading tip...</p>
-        <p class="description">Please wait...</p>
-    </div>
 
-    <script>
-        const imageContainer = document.getElementById("image-container");
-        let currentImage = document.getElementById("currentImage");
-        const tipContainer = document.getElementById("tip-container");
-
-        // Generate image filenames dynamically
-        const images = [];
-        for (let i = 1; i <= 416; i++) {
-            images.push(`https://revphillipj.github.io/dndloadingtips/image%20(${i}).png`);
+        /* 🔵 Menu Button (Small Dot) */
+        .menu-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            z-index: 1000;
         }
 
-        function getRandomImage() {
-            return images[Math.floor(Math.random() * images.length)];
-        }
-
-        function getRandomTip(tips) {
-            return tips[Math.floor(Math.random() * tips.length)];
-        }
-
-        function changeImage() {
-            const newImage = document.createElement("img");
-            newImage.src = getRandomImage();
-            newImage.classList.add("image");
-            newImage.style.opacity = "0";
-            imageContainer.appendChild(newImage);
-            
-            tipContainer.style.opacity = "0";
-            setTimeout(() => {
-                newImage.style.opacity = "1";
-                currentImage.style.opacity = "0";
-                
-                // Load a new tip
-                fetch('tips.json')
-                    .then(response => response.json())
-                    .then(tips => {
-                        const randomTip = getRandomTip(tips);
-                        tipContainer.querySelector('.headline').textContent = randomTip.headline;
-                        tipContainer.querySelector('.description').textContent = randomTip.description;
-                    })
-                    .catch(error => console.error("Error loading tips:", error));
-
-                tipContainer.style.opacity = "1";
-                
-                setTimeout(() => {
-                    imageContainer.removeChild(currentImage);
-                    newImage.id = "currentImage";
-                    currentImage = newImage;
-                }, 1000);
-            }, 100);
-        }
-
-        // Initialize with a random image and tip
-        currentImage.src = getRandomImage();
-        currentImage.style.opacity = "1";
-
-        fetch('tips.json')
-            .then(response => response.json())
-            .then(tips => {
-                const initialTip = getRandomTip(tips);
-                tipContainer.querySelector('.headline').textContent = initialTip.headline;
-                tipContainer.querySelector('.description').textContent = initialTip.description;
-            })
-            .catch(error => console.error("Error loading tips:", error));
-
-        // Change image and tip every 30 seconds
-        setInterval(changeImage, 30000);
-    </script>
-</body>
-</html>
+        /* 🔵 Expand the menu when hovered */
+        .menu-container:hover {
+            width: 180px;
+            height: auto;
+            border-radius: 10px;
+            padding: 15px;
