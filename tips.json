@@ -68,5 +68,7 @@
    { "headline": "Death roll", "description": "Lizardfolk can make a special bite attack with their bonus action. If it hits, they gain the damage dealt back as temporary hit points- tasty!" },
    { "headline": "Cat Dash", "description": "Tabaxi can choose to move double their movement on their turn- although they can't do this again until they spend a turn not moving." },
    { "headline": "Flexible Fashion", "description": "Magic items usually resize themselves for the user. One size to fit them all!" },
-   { "headline": "Focus up", "description": "Magic items that are staffs, wands and rods can usually be used as an arcane focus. Efficient!" }
+   { "headline": "Focus up", "description": "Magic items that are staffs, wands and rods can usually be used as an arcane focus. Efficient!" },
+   { "headline": "Helping Hand", "description": "Smell a trap? The Mage Hand cantrip can be used to manipulate objects from 30ft away, as well as open unlocked doors. Better safe than sorry!" },
+   { "headline": "Target Confirmed", "description" "The Magic Missile spell auto-hits the target with force damage, so is useful against well armored creatures. The Shield spell negates this damage though." }
 ]
