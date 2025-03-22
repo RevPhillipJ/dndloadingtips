@@ -100,3 +100,139 @@
             height: auto;
             border-radius: 10px;
             padding: 15px;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 🟡 Hide the text until hovered */
+        .menu-container a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            margin: 5px 0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* 🟠 Show links when hovering */
+        .menu-container:hover a {
+            opacity: 1;
+        }
+
+        /* 🔴 Section Headers */
+        .menu-header {
+            color: #ffcc00;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* 🟣 Show headers when hovering */
+        .menu-container:hover .menu-header {
+            opacity: 1;
+        }
+
+        /* 🟤 Add hover effect to links */
+        .menu-container a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="currentImage" class="image" src="" alt="Random Image">
+    </div>
+    <div id="tip-container">
+        <p class="headline">Loading tip...</p>
+        <p class="description">Please wait...</p>
+    </div>
+
+    <!-- 🔽 Mouseover Menu Button -->
+    <div class="menu-container">
+        ☰
+        <span class="menu-header">Contact</span>
+        <a href="contact.html">Email Us</a>
+        <a href="socials.html">Social Media</a>
+
+        <span class="menu-header">Support</span>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Get Help</a>
+    </div>
+
+    <script>
+        const imageContainer = document.getElementById("image-container");
+        let currentImage = document.getElementById("currentImage");
+        const tipContainer = document.getElementById("tip-container");
+
+        // Generate image filenames dynamically
+        const images = [];
+        for (let i = 1; i <= 416; i++) {
+            images.push(`https://revphillipj.github.io/dndloadingtips/image%20(${i}).png`);
+        }
+
+        function getRandomImage() {
+            return images[Math.floor(Math.random() * images.length)];
+        }
+
+        function getRandomTip(tips) {
+            return tips[Math.floor(Math.random() * tips.length)];
+        }
+
+        function changeImage() {
+            const newImage = document.createElement("img");
+            newImage.src = getRandomImage();
+            newImage.classList.add("image");
+            newImage.style.opacity = "0";
+            imageContainer.appendChild(newImage);
+            
+            tipContainer.style.opacity = "0";
+            setTimeout(() => {
+                newImage.style.opacity = "1";
+                currentImage.style.opacity = "0";
+                
+                // Load a new tip
+                fetch('tips.json')
+                    .then(response => response.json())
+                    .then(tips => {
+                        const randomTip = getRandomTip(tips);
+                        tipContainer.querySelector('.headline').textContent = randomTip.headline;
+                        tipContainer.querySelector('.description').textContent = randomTip.description;
+                    })
+                    .catch(error => console.error("Error loading tips:", error));
+
+                tipContainer.style.opacity = "1";
+                
+                setTimeout(() => {
+                    imageContainer.removeChild(currentImage);
+                    newImage.id = "currentImage";
+                    currentImage = newImage;
+                }, 1000);
+            }, 100);
+        }
+
+        // Initialize with a random image and tip
+        currentImage.src = getRandomImage();
+        currentImage.style.opacity = "1";
+
+        fetch('tips.json')
+            .then(response => response.json())
+            .then(tips => {
+                const initialTip = getRandomTip(tips);
+                tipContainer.querySelector('.headline').textContent = initialTip.headline;
+                tipContainer.querySelector('.description').textContent = initialTip.description;
+            })
+            .catch(error => console.error("Error loading tips:", error));
+
+        // Change image and tip every 30 seconds
+        setInterval(changeImage, 30000);
+    </script>
+</body>
+</html>
