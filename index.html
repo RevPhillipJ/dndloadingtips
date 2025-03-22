@@ -75,13 +75,13 @@
             100% { transform: scale(1.1) translate(0, 0); }
         }
 
-        /* 🔵 Menu Button (Small Dot) */
+        /* Menu Button */
         .menu-container {
             position: fixed;
             top: 10px;
             right: 10px;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             background-color: rgba(255, 255, 255, 0.7);
             border-radius: 50%;
             cursor: pointer;
@@ -89,12 +89,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: bold;
             z-index: 1000;
         }
 
-        /* 🔵 Expand the menu when hovered */
+        /* Expand menu on hover */
         .menu-container:hover {
             width: 180px;
             height: auto;
@@ -106,7 +106,7 @@
             align-items: center;
         }
 
-        /* 🟡 Hide the text until hovered */
+        /* Menu links */
         .menu-container a {
             color: white;
             text-decoration: none;
@@ -120,12 +120,12 @@
             text-align: center;
         }
 
-        /* 🟠 Show links when hovering */
+        /* Show links on hover */
         .menu-container:hover a {
             opacity: 1;
         }
 
-        /* 🔴 Section Headers */
+        /* Section Headers */
         .menu-header {
             color: #ffcc00;
             font-size: 12px;
@@ -135,12 +135,12 @@
             transition: opacity 0.3s ease-in-out;
         }
 
-        /* 🟣 Show headers when hovering */
+        /* Show headers on hover */
         .menu-container:hover .menu-header {
             opacity: 1;
         }
 
-        /* 🟤 Add hover effect to links */
+        /* Hover effect for links */
         .menu-container a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
@@ -155,7 +155,7 @@
         <p class="description">Please wait...</p>
     </div>
 
-    <!-- 🔽 Mouseover Menu Button -->
+    <!-- Mouseover Menu -->
     <div class="menu-container">
         ☰
         <span class="menu-header">Contact</span>
